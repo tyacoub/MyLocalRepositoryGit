@@ -25,4 +25,14 @@ public class AdvancedCalcTest {
 		
 		Assert.assertEquals(res, adavnceCalc.getFactory(in1));
 	}
+	
+	@Test
+	public void testGCD(){
+		
+		final int a = 54;
+		final int b = 24;
+		final int res = 6;
+		
+		Assert.assertEquals(res, adavnceCalc.getGCD(a,b));
+	}
 }

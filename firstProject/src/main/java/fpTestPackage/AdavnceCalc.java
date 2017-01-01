@@ -12,4 +12,13 @@ public class AdavnceCalc {
 		
 		return res;
 	}
+	
+	public int getGCD(int a, int b){
+		if(a == b)
+			return a;
+		if(a > b)
+			return getGCD(a-b,b);
+		else
+			return getGCD(a,b-a);
+	}
 }
