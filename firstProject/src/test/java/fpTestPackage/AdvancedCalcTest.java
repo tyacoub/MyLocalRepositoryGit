@@ -56,4 +56,13 @@ public class AdvancedCalcTest {
 		
 		
 	}
+	
+	@Test
+	public void testBigger(){
+		final int a = 4;
+		final int b = 9;
+		final int res = 9;
+		
+		Assert.assertEquals(res, adavnceCalc.getBigger(a, b));
+	}
 }

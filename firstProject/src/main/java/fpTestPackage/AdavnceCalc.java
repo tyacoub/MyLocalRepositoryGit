@@ -52,4 +52,10 @@ public class AdavnceCalc {
 		
 		
 	}
+	
+	public int getBigger(int a, int b){
+		if(a <= b)
+			return b;
+		return a;
+	}
 }
