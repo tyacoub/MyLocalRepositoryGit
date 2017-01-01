@@ -35,4 +35,14 @@ public class AdvancedCalcTest {
 		
 		Assert.assertEquals(res, adavnceCalc.getGCD(a,b));
 	}
+	
+	@Test
+	public void testLCM(){
+		
+		final int a = 54;
+		final int b = 24;
+		final int res = 216;
+		
+		Assert.assertEquals(res, adavnceCalc.getLCM(a,b));
+	}
 }
