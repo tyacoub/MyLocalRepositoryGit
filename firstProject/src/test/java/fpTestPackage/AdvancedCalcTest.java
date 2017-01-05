@@ -5,7 +5,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
-import junit.framework.Assert;
+import org.junit.Assert;
 
 @RunWith(JUnit4.class)
 public class AdvancedCalcTest {
@@ -37,6 +37,7 @@ public class AdvancedCalcTest {
 	}
 	
 	@Test
+
 	public void testLCM(){
 		
 		final int a = 54;
@@ -44,5 +45,34 @@ public class AdvancedCalcTest {
 		final int res = 216;
 		
 		Assert.assertEquals(res, adavnceCalc.getLCM(a,b));
+	}
+	public void testQuadEquRoots(){
+		final int a = 1;
+		final int b = -1;
+		final int c = -2;
+		final int[] res = {2,-1};
+		
+		final double[] actRes = adavnceCalc.getQuadEquRoots(a, b, c);
+		
+		if(actRes == null)
+			Assert.fail("");
+		
+		Assert.assertEquals(res.length, actRes.length);
+		
+		for(int i = 0; i < res.length; i++)
+			Assert.assertEquals(res[i],(int)actRes[i]);
+		
+		
+		
+	}
+	
+	@Test
+	public void testBigger(){
+		final int a = 4;
+		final int b = 9;
+		final int res = 9;
+		
+		Assert.assertEquals(res, adavnceCalc.getBigger(a, b));
+
 	}
 }
