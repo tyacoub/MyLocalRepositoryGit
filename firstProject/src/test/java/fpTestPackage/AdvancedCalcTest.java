@@ -75,4 +75,14 @@ public class AdvancedCalcTest {
 		Assert.assertEquals(res, adavnceCalc.getBigger(a, b));
 
 	}
+	
+	@Test
+	public void testSmaller(){
+		final int a = 4;
+		final int b = 9;
+		final int res = 4;
+		
+		Assert.assertEquals(res, adavnceCalc.getSmaller(a, b));
+
+	}
 }

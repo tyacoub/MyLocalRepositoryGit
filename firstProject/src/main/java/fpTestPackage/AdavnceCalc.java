@@ -92,4 +92,11 @@ public class AdavnceCalc {
 		return a;
 
 	}
+	
+	public int getSmaller(int a, int b){
+		if(a <= b)
+			return a;
+		return b;
+
+	}
 }
