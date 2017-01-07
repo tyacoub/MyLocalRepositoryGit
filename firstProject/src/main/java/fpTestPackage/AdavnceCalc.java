@@ -8,6 +8,11 @@ public class AdavnceCalc {
 		return infoMsg;
 	}
 
+	/**
+	 * 
+	 * @param num input
+	 * @return num(num-1)(num-2)..*2*1
+	 */
 	public int getFactory(final int num){
 		
 		int res = 1;
@@ -18,7 +23,12 @@ public class AdavnceCalc {
 		
 		return res;
 	}
-	
+	/**
+	 * 
+	 * @param a first number
+	 * @param b second number
+	 * @return Greatest Common Divisor of (a, b)
+	 */
 	public int getGCD(int a, int b){
 		if(a == b)
 			return a;
@@ -29,13 +39,26 @@ public class AdavnceCalc {
 	}
 	
 
+	/**
+	 * 
+	 * @param a	first number
+	 * @param b second number
+	 * @return Least Common Multiple of (a, b)
+	 */
 	public int getLCM(int a, int b){
 		return a*b/getGCD(a,b);
-}
+	}
+	
 	private double getDelta(double a, double b, double c){
 		return b*b-4*a*c;
 	}
-	
+	/**
+	 * resolves the equation aX2 +bX +c = 0
+	 * @param a
+	 * @param b
+	 * @param c
+	 * @return array, when delta >= 0, null otherwise with infoMsg 
+	 */
 	public double[] getQuadEquRoots(double a, double b, double c){
 		
 		double[] res = null;
@@ -57,6 +80,12 @@ public class AdavnceCalc {
 		
 	}
 	
+	/**
+	 *
+	 * @param a	first number
+	 * @param b second number
+	 * @return the bigger of (a, b)
+	 */
 	public int getBigger(int a, int b){
 		if(a <= b)
 			return b;
