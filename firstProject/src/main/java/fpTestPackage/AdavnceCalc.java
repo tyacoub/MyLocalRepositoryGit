@@ -99,4 +99,18 @@ public class AdavnceCalc {
 		return b;
 
 	}
+	
+	public double getTriangleArea(int a, int b, int c){
+		
+		
+		if(a <= 0 || b <= 0 || c <= 0){
+			infoMsg = "invalid triangle's lengths";
+			return 0;
+		}
+		
+		final float halfSum = (a+b+c)/2;
+		return Math.sqrt((halfSum - a)*(halfSum - b)*(halfSum - c));
+		
+		
+	}
 }
