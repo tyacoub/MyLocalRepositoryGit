@@ -85,4 +85,16 @@ public class AdvancedCalcTest {
 		Assert.assertEquals(res, adavnceCalc.getSmaller(a, b));
 
 	}
+	
+	@Test
+	public void testTriangleArea(){
+		final int a = 4;
+		final int b = 3;
+		final int c = 5;
+		
+		final double area = 6;
+		
+		Assert.assertEquals(area, adavnceCalc.getTriangleArea(a, b, c),0);
+
+	}
 }

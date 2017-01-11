@@ -109,8 +109,7 @@ public class AdavnceCalc {
 		}
 		
 		final float halfSum = (a+b+c)/2;
-		return Math.sqrt((halfSum - a)*(halfSum - b)*(halfSum - c));
-		
+		return Math.sqrt(halfSum*(halfSum - a)*(halfSum - b)*(halfSum - c));
 		
 	}
 }
