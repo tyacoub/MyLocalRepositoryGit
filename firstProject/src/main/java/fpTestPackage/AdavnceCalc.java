@@ -2,6 +2,7 @@ package fpTestPackage;
 
 public class AdavnceCalc {
 
+	private static final double hundred = 100;
 	private String infoMsg;
 
 	public String getInfoMsg() {
@@ -112,4 +113,12 @@ public class AdavnceCalc {
 		return Math.sqrt(halfSum*(halfSum - a)*(halfSum - b)*(halfSum - c));
 		
 	}
+	
+	public double getPercent(double amount, double percentRate){
+		return amount * percentRate/hundred;
+	}
+	
+	
+	
+	
 }
