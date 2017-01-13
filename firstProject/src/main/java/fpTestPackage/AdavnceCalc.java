@@ -1,5 +1,7 @@
 package fpTestPackage;
 
+import java.awt.Point;
+
 public class AdavnceCalc {
 
 	private String infoMsg;
@@ -99,7 +101,13 @@ public class AdavnceCalc {
 		return b;
 
 	}
-	
+	/**
+	 * 
+	 * @param a first side
+	 * @param b second side
+	 * @param c third side
+	 * @return area of the triangle
+	 */
 	public double getTriangleArea(int a, int b, int c){
 		
 		
@@ -112,5 +120,13 @@ public class AdavnceCalc {
 		return Math.sqrt((halfSum - a)*(halfSum - b)*(halfSum - c));
 		
 		
+	}
+	
+	public double distanceBetTwoPs(Point p1, Point p2){
+		
+		double diffX = p2.getX() - p1.getX();
+		double diffY = p2.getY() - p2.getY();
+		
+		return Math.sqrt(Math.pow(diffX, 2) + Math.pow(diffY, 2));
 	}
 }
